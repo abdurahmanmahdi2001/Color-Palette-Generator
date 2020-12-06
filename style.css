@@ -15,11 +15,17 @@ body {
   
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
 /* Logo */
 
 .logo-text{
   font-size: 25px;
-  
+  cursor: pointer;
+  position: absolute;
 }
 
 .logo-div{
@@ -28,11 +34,14 @@ body {
   left: 10px;
 }
 
-.logo-icon{
-  margin-left: 2px;
-  color: green;
-
+.logo-image{
+  width: 24px;
+ position: relative;
+ left: 34px;
+  bottom: 28px;
 }
+
+
 
 /* Container & Span */
 
