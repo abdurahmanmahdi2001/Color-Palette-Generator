@@ -12,44 +12,89 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  
 }
+
+/* Logo */
+
+.logo-text{
+  font-size: 25px;
+  
+}
+
+.logo-div{
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+.logo-icon{
+  margin-left: 2px;
+  color: green;
+
+}
+
+/* Container & Span */
 
 .container{
   display: flex;
   width: 90vw;
+  position: absolute;
+  top: 120px;
 }
 
 .panel{
-  background-size: auto 100%;
-  background-position:center ;
-  background-repeat: no-repeat;
-  height: 80vh;
+  height: 40vh;
   border-radius: 50px;
   color: #fff;
   cursor: pointer;
   flex: 0.5;
-  margin: 10px;
+  margin: 5px;
   position: relative;
-  transition: flex 0.7s ease-in;
 }
 
-.panel h3{
-  font-size: 24px;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
+
+.panel span{
+  font-size: 2vw;
+  font-weight: 900;
   margin: 0;
-  opacity: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
 }
 
-.panel.active{
-  flex:5;
+.color1, .color2, .color3, .color4, .color5{
+  text-shadow: 0 0 3px #000000, 0 0 5px red ;
 }
 
-.panel.active h3{
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
+/* Button */
+
+.btn-div{
+  position: absolute;
+  top: 450px;
 }
+
+#btn{
+  text-decoration: none;
+  border: 2px solid gray;
+  border-radius: 20px;
+  font-size: 20px;
+  color: white;
+  padding: 15px 15px;
+  cursor: pointer;
+  background-color: gainsboro;
+  text-shadow: 0 0 3px #000000, 0 0 5px goldenrod ;
+  background-size: 150%;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#btn:hover{
+  background-position: right;
+}
+
+/* Media Q */
 
 @media(max-width: 480px) {
   .container{
@@ -59,4 +104,15 @@ body {
   .panel:nth-of-type(4), .panel:nth-of-type(5){
     display: none;
   }
+
+  .panel span{
+      font-size: 10px;
+      font-weight: 900;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      padding-top: 120px;
+    
+  }
 }
+
