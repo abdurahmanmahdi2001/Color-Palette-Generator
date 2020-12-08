@@ -1,10 +1,10 @@
 const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 const btn = document.getElementById("btn");
-const color1 = document.querySelector(".color1");
-const color2 = document.querySelector(".color2");
-const color3 = document.querySelector(".color3");
-const color4 = document.querySelector(".color4");
-const color5 = document.querySelector(".color5");
+const color1 = document.querySelector(".div-1");
+const color2 = document.querySelector(".div-2");
+const color3 = document.querySelector(".div-3");
+const color4 = document.querySelector(".div-4");
+const color5 = document.querySelector(".div-5");
 
 
 btn.addEventListener("click", function () {

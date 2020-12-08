@@ -6,12 +6,19 @@
 
 body {
   font-family: 'Muli', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
   overflow: hidden;
   margin: 0;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: 100px 300px 200px;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  
   
 }
 
@@ -22,76 +29,81 @@ a{
 
 /* Logo */
 
+.logo-div{
+  height: 50px;
+  width: 110px;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
 .logo-text{
   font-size: 25px;
   cursor: pointer;
-  position: absolute;
+  text-align: right;
 }
 
-.logo-div{
-  position: absolute;
-  top: 0px;
-  left: 10px;
-}
 
+.logo-image-div{
+  height: 65px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  margin-left: 110px;
+}
 .logo-image{
   width: 24px;
- position: relative;
- left: 34px;
-  bottom: 28px;
 }
 
 
 
 /* Container & Span */
 
-.container{
-  display: flex;
-  width: 90vw;
-  position: absolute;
-  top: 120px;
-}
+
 
 .panel{
-  height: 40vh;
-  border-radius: 50px;
+  border-radius: 10px;
   color: #fff;
   cursor: pointer;
-  flex: 0.5;
+  flex-grow: 1;
   margin: 5px;
-  position: relative;
+  grid-row: 2 / 2;
 }
 
 
-.panel span{
-  font-size: 2vw;
-  font-weight: 900;
-  margin: 0;
-  display: flex;
+
+
+.div-5, .div-4, .div-3, .div-2, .div-1{
+  display: flex ;
   justify-content: center;
-  padding-top: 100px;
+  align-items: center;
+  text-shadow: 0 0 3px #000000, 0 0 5px red ;
+  font-size: 1.5vw;
 }
 
-.color1, .color2, .color3, .color4, .color5{
-  text-shadow: 0 0 3px #000000, 0 0 5px red ;
-}
+
 
 /* Button */
 
 .btn-div{
-  position: absolute;
-  top: 450px;
+ grid-row: 3 / 3;
+ grid-column: 3 / 3 ;
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+ margin-top: 30px;
 }
 
 #btn{
   text-decoration: none;
-  border: 2px solid gray;
-  border-radius: 20px;
+  border: 2px solid gold;
+  border-radius: 10px;
   font-size: 20px;
   color: white;
-  padding: 15px 15px;
+  padding: 30px 40px;
   cursor: pointer;
-  background-color: gainsboro;
+  background-color: whitesmoke;
   text-shadow: 0 0 3px #000000, 0 0 5px goldenrod ;
   background-size: 150%;
   outline: none;
@@ -99,9 +111,6 @@ a{
   font-weight: 600;
 }
 
-#btn:hover{
-  background-position: right;
-}
 
 /* Media Q */
 
@@ -110,18 +119,10 @@ a{
     width: 100vw;
   }
 
-  .panel:nth-of-type(4), .panel:nth-of-type(5){
+  /* .panel:nth-of-type(4), .panel:nth-of-type(5){
     display: none;
-  }
+  } */
 
-  .panel span{
-      font-size: 10px;
-      font-weight: 900;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      padding-top: 120px;
-    
-  }
+ 
 }
 
